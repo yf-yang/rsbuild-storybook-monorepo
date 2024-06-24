@@ -1,0 +1,23 @@
+{
+  "name": "pkg2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": [
+        "./dist/types/index.d.ts",
+        "./src/index.ts"
+      ],
+      "default": "./dist/es/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

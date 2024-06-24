@@ -1,0 +1,13 @@
+diff --git a/dist/index.cjs b/dist/index.cjs
+index 315f290459d83529212e2f0f8375bee4f8b3fd47..30df96b765e9f0d0e0b57f8744dea04728dd1d5e 100644
+--- a/dist/index.cjs
++++ b/dist/index.cjs
+@@ -7730,7 +7730,7 @@ function pluginSourceBuild(options) {
+             rule.resolve.mainFields.merge(
+               resolvePriority === "source" ? [sourceField, "..."] : ["...", sourceField]
+             );
+-            rule.resolve.conditionNames.add("...").add(sourceField);
++            // rule.resolve.conditionNames.add("...").add(sourceField);
+           }
+         }
+       });

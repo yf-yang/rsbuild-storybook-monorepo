@@ -1,0 +1,18 @@
+{
+  "name": "rsbuild-storybook-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pnpm": {
+    "patchedDependencies": {
+      "storybook-builder-rsbuild@0.0.5": "patches/storybook-builder-rsbuild@0.0.5.patch",
+      "@rsbuild/plugin-source-build@0.7.9": "patches/@rsbuild__plugin-source-build@0.7.9.patch"
+    }
+  }
+}

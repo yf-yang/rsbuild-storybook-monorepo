@@ -1,0 +1,15 @@
+diff --git a/templates/virtualModuleModernEntry.js.handlebars b/templates/virtualModuleModernEntry.js.handlebars
+index 1224d3d015df76df07e8074d9328ae19174959ee..e5014d3741dfe116ccf0fae9273457966bf3dd71 100644
+--- a/templates/virtualModuleModernEntry.js.handlebars
++++ b/templates/virtualModuleModernEntry.js.handlebars
+@@ -5,8 +5,8 @@ import { createBrowserChannel } from '@storybook/channels';
+ 
+ import { importFn } from './{{storiesFilename}}';
+ 
+-const getProjectAnnotations = () =>
+-  composeConfigs([{{#each previewAnnotations}}require('{{this}}'),{{/each}}]);
++const getProjectAnnotations = async () =>
++  composeConfigs([{{#each previewAnnotations}}await import('{{this}}'),{{/each}}]);
+ 
+ const channel = createBrowserChannel({ page: 'preview' });
+ addons.setChannel(channel);
