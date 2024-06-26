@@ -1,6 +1,5 @@
 import React from "react";
 import "./button.css";
-import { foo } from "pkg2";
 
 interface ButtonProps {
   /**
@@ -35,7 +34,6 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
-  foo();
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
