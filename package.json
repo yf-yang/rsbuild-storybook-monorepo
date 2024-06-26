@@ -8,10 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "pnpm": {
-    "patchedDependencies": {
-      "@rsbuild/plugin-source-build@0.7.9": "patches/@rsbuild__plugin-source-build@0.7.9.patch"
-    }
-  }
+  "license": "ISC"
 }

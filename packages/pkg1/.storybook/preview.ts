@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import { foo } from "pkg2";
+import { load } from "./test";
 
 const preview: Preview = {
   parameters: {
@@ -12,7 +12,7 @@ const preview: Preview = {
   },
   loaders: [
     async () => {
-      foo();
+      load();
       return {};
     },
   ],
