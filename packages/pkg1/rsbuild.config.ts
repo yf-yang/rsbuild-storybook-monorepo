@@ -4,5 +4,5 @@ import { pluginSourceBuild } from "@rsbuild/plugin-source-build";
 import { pluginNodePolyfill } from "@rsbuild/plugin-node-polyfill";
 
 export default defineConfig({
-  plugins: [pluginReact(), pluginSourceBuild()],
+  plugins: [pluginReact(), pluginSourceBuild(), pluginNodePolyfill()],
 });
